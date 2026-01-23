@@ -112,7 +112,8 @@ The following is a step by step guide for common proposals:
     * CLC or GHC team needs to add a comment to the GHC MR "Approved by CLC in [link to the vote outcome]".
     * Double check that the changelog and the commit messages are in order
     * Raise an issue on GHC GitLab to help GHC team with progress and release tracking
-    * The GHC MR needs to be reviewed/approved and landed. This is typically done by members of the CLC and GHC Team.
+    * The GHC MR needs to be reviewed and approved.
+    * After approval, the proposer can assign the MR to "marge-bot" (the merge train) at their own discretion
     * After merging, CLC needs to remove the proposal label "awaits-merge" and add "base-4.XX" (coordinate with GHC devs which base would be the first to release the change)
     * all changes to `base` package slated for future release should land in GHC `master` before the next major release branch is forked (also see [GHC wiki on major releases](https://gitlab.haskell.org/ghc/ghc/-/wikis/GHC-status#1-major-releases))
       - backports are usually reserved for security or packaging matters
